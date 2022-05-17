@@ -1,6 +1,6 @@
 
   
-name: Docker Image rstudio-verse
+name: "Docker_Image_rstudio-verse"
 
 on:
   push:
