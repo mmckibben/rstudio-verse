@@ -51,6 +51,8 @@ RUN chmod +x /usr/local/bin/run.sh
 
 COPY nginx.conf.tmpl /nginx.conf.tmpl
 COPY rserver.conf /etc/rstudio/rserver.conf
+COPY supervisor-nginx.conf /etc/supervisor/conf.d/nginx.conf
+COPY supervisor-rstudio.conf /etc/supervisor/conf.d/rstudio.conf
 
 ENV REDIRECT_URL "http://localhost/"
 
