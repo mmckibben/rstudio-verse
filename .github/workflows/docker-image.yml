@@ -29,6 +29,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: /rstudio-verse/latest/Dockerfile
+          file: rstudio-verse/latest/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/rstudio-verse
