@@ -7,9 +7,9 @@ ARG VCS_REF
 ARG VERSION
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name="mmckibben" \
-      org.label-schema.description="Built from Rocker-Project RStudio Verse, additional depends for CyVerse K8s workbench" \
+      org.label-schema.description="Built from Rocker-Project RStudio Verse, additional depends for CyVerse K8s workbench" 
 
-MAINTAINER "Tyson Lee Swetnam tswetnam@cyverse.org"
+MAINTAINER "student"
 
 # Install a few dependencies for iCommands, text editing, and monitoring instances
 RUN apt-get update && apt-get install -y \
