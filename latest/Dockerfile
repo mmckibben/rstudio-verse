@@ -49,7 +49,7 @@ ENV PASSWORD "rstudio1"
 COPY run.sh /usr/local/bin/run.sh
 RUN chmod +x /usr/local/bin/run.sh
 
-COPY nginx.conf.tmpl /nginx.conf.tmpl
+COPY latest/nginx.conf.tmpl /nginx.conf.tmpl
 COPY latest/rserver.conf /etc/rstudio/rserver.conf
 COPY latest/supervisor-nginx.conf /etc/supervisor/conf.d/nginx.conf
 COPY latest/supervisor-rstudio.conf /etc/supervisor/conf.d/rstudio.conf
