@@ -46,7 +46,7 @@ RUN chmod -R 777 /usr/local/lib/R/site-library
 ENV PASSWORD "rstudio1"
 #RUN bash /etc/cont-init.d/userconf
 
-COPY run.sh /usr/local/bin/run.sh
+COPY latest/run.sh /usr/local/bin/run.sh
 RUN chmod +x /usr/local/bin/run.sh
 
 COPY latest/nginx.conf.tmpl /nginx.conf.tmpl
